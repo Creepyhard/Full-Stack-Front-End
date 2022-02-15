@@ -1,0 +1,21 @@
+<h2> Usuario List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Nome</th>
+            <th> Email </th>
+            <th> Senha </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let usuario of usuario" >
+            <td> {{ usuario.nome }} </td>
+            <td> {{ usuario.email }} </td>
+            <td> {{ usuario.senha }} </td>
+            <td>
+                <button (click) = "atualizaUsuario(usuario.id)" class = "btn btn-info" routerLink="/esqueceuasenha"> Update</button>
+                <button (click) = "delete(usuario.id)" class = "btn btn-danger" style="margin-left: 10px" > Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,26 @@
+<div>
+  <form #loginform="ngForm" class="px-4 py-3" id="forma" >
+    <div class="mb-3">
+      <label [(ngModel)]="usuario.email" for="campo-email" class="form-label" >Email</label>
+      <input name="email" type="email" class="form-control" placeholder="email@exemplo.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="campo-senha" class="form-label">Senha</label>
+      <input [(ngModel)]="usuario.senha" name="senha" type="password" class="form-control" placeholder="Senha" required>
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input type="password" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+          Lembrar senha
+        </label>
+      </div>
+    </div>
+    <button (click)="fazerLogin()" type="submit" class="btn btn-primary" name="action">Entrar</button>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" routerLink="/signup">Novo aqui? Sign up</a>
+    <a class="dropdown-item" routerLink="/esqueceuasenha">Esqueceu a senha?</a>
+</form>
+
+</div>
+

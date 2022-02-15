@@ -1,0 +1,23 @@
+<div>
+  <form (ngSubmit)="onSubmit()" class="px-4 py-3" id="forma">
+    <div class="mb-3">
+      <label for="campo-nome" class="form-label" >Nome</label>
+      <input [(ngModel)] = "usuario.nome" name="nome" type="nome" class="form-control" id="campo-nome" placeholder="Diego R..." required>
+    </div>
+    <div class="mb-3">
+      <label for="campo-email" class="form-label" >Email</label>
+      <input [(ngModel)] = "usuario.email" name="nome" type="email" class="form-control" id="campo-email" placeholder="email@exemplo.com" required>
+    </div>
+    <div class="mb-3">
+      <label for="campo-senha" class="form-label">Senha</label>
+      <input [(ngModel)] = "usuario.senha" name="senha" type="password" class="form-control" id="campo-senha" placeholder="Senha" required>
+    </div>
+    <div class="mb-3">
+    </div>
+    <button type="submit" class="btn btn-primary" name="action">Atualizar senha</button>
+    <div class="dropdown-divider"></div>
+</form>
+</div>
+
+
+
