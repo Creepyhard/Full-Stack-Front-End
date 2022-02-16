@@ -25,13 +25,15 @@ import { DeteleUserComponent } from './pagina/detele-user/detele-user.component'
     AddUsuarioComponent,
     AtualizaUsuarioComponent,
     DeteleUserComponent
+
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule
-    ],
+
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
