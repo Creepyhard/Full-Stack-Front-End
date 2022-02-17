@@ -20,6 +20,10 @@ export class UsuarioService {
     return this.httpClient.get<RequestLogin>(`${this.baseUrl}/${id}`);
   }
 
+  public loginUsuarioRemoto(usuario: RequestLogin): Observable<Object> {
+    return this.httpClient.post(`${this.baseUrl}/login`, usuario)
+  }
+
   criarUsuario(usuario: RequestLogin): Observable<Object>{
     return this.httpClient.post(`${this.baseUrl}`, usuario);
   }

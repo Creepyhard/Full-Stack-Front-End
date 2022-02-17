@@ -32,5 +32,6 @@ export class SignupComponent implements OnInit {
   onSubmit(){
     console.log(this.usuario);
     this.salvarUsuario();
+    this.router.navigate(["/login"])
   }
 }
